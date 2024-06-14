@@ -1,14 +1,18 @@
-
-import './App.css'
-import Navbar from './components/Navbar'
+import "./App.css";
+import Inbox from "./components/Inbox";
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Siddebar";
 function App() {
-
-
   return (
-    <div>
-     <Navbar/>
+    <div className="bg-[#F6F8FC] h-screen">
+      <Navbar />
+
+      <div className="flex">
+        <Sidebar />
+        <Inbox />
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
